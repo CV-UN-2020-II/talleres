@@ -24,9 +24,7 @@ void draw() {
     resetShader();
   }
   image(image, 0, 0,350,400);
-  print("framecount  ");
-  print(frameCount);
-  print("  framerate  ");
+  print("Frame Rate:  ");
   println(frameRate);  
 }
 

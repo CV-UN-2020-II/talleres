@@ -3,13 +3,14 @@ Movie myMovie;
 PImage img;
 PFont f;  
 
-float [][] matrix;
+float [][] matrix={ { -6, 0, 0},
+                    { 0, 6, 0 },
+                    { 0, 0, -6 }};  ;
 
 void setup() {
   size(800,550);  
    f = createFont("Arial",16,true);
-    textFont(f,16);                  
-  //fill(0);                         
+    textFont(f,16);                                         
   text("Elegir b para blur effect o e para deteccion de bordes ",10,15); 
   myMovie = new Movie(this, "baile.mp4");  
   img = myMovie.get();
@@ -25,9 +26,7 @@ void draw() {
     image(img, 450, 50, 350,400);
   }
   image(myMovie, 0, 50, 350,400);  
-  print("framecount  ");
-  print(frameCount);
-  print("  framerate  ");
+  print("Frame Rate:  ");
   println(frameRate);
  }
     
