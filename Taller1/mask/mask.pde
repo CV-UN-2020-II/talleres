@@ -9,10 +9,10 @@ float [][] matrix={ { -6, 0, 0},
 
 void setup() {
   size(800,550);  
-   f = createFont("Arial",16,true);
-    textFont(f,16);                                         
+  f = createFont("Arial",16,true);
+  textFont(f,16);                                         
   text("Elegir b para blur effect o e para deteccion de bordes ",10,15); 
-  myMovie = new Movie(this, "baile.mp4");  
+  myMovie = new Movie(this, "bailehb.mp4");  
   img = myMovie.get();
   myMovie.loop();
 }
