@@ -6,7 +6,7 @@ PShader convolutionShader;
 
 void setup() {
   size(800,400, P3D);    
-  myMovie = new Movie(this, "baile.mp4");  
+  myMovie = new Movie(this, "bailehb.mp4");  
   image = myMovie.get();
   myMovie.loop();  
   convolutionShader = loadShader("convolution.glsl");
