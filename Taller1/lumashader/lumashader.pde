@@ -6,7 +6,7 @@ PShader lumaShader;
 
 void setup() {
   size(800,400, P3D);    
-  myMovie = new Movie(this, "baile2.mp4");  
+  myMovie = new Movie(this, "baile.mp4");  
   image = myMovie.get();
   myMovie.loop();  
   lumaShader = loadShader("lumashader.glsl");
@@ -24,5 +24,6 @@ void draw() {
   }
   image(image, 0, 0,350,400);
   print("Frame Rate:  ");
-  print(frameRate);  
+  println(frameRate); 
+
 }
